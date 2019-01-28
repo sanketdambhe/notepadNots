@@ -1,0 +1,57 @@
+Bootstrap v4.0.0 /
+Laravel 5.6
+
+(*If vender folder is missing from your project then enter command:->  composer install )
+
+START SERVER:
+        php artisan serve
+CREATE TABLE MIGRATION:
+ 	php artisan make:migration create_NameOfTable_table
+
+	//it not be defind 191 on fasad file
+	php artisan make:migration create_users_table --create=users
+
+CREATE TABLE FROM MIGRATION:
+        php artisan migrate
+
+CREATE MODEL:
+     php artisan make:model Modelname  -- (First charector or model name in Capital)(project name in singular form ex'Project' not 'Projects')
+
+CREATE CONTROLLER:
+        php artisan make:controller ControllerName --resource --model=ModelName (use controller in camel case for Ex.. TaskController) (controller name in purial form ex'ProjectsController' not 'ProjectController')
+
+GET ROUTER LIST:
+        php artisan route:list
+
+CREATE MODEL WITH TABLE:
+       php artisan make:model Company -a
+
+MIGRATE TABLE WITH FOREIGN KEY RELATION:
+      migration create_project_user_table   table relation
+      
+__________________________________________________________________________________________________________________________________________
+php artisan make:model Messdata --migration
+
+dabba-parameter , comments, order-table
+
+
+C:\xampp\htdocs\Laravel\projectManager>php artisan make:model Company -a
+
+
+php artisan make:migration create_project_user_table   table relation
+
+
+
+__________________________________________________________________________________________________________________________________________
+Relationship	Association Type	Example
+one to one	hasOne	                A user has one profile.
+one to many	hasMany	                A user can have multiple articles.
+many to one	belongsTo	        Many articles belong to a user.
+many to many	belongsToMany	        Tags belong to many articles.
+
+__________________________________________________________________________________________________________________________________________
+create->store
+edit->update
+
+
+

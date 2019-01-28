@@ -1,0 +1,36 @@
+username: sanketdambhe password: Sanket8983949949
+https://github.com/sagarrokade404/User_Auth_with_node_angular
+
+*[Download and install Git Bash from :https://git-scm.com/downloads and select use git with commmand promt also while installation]
+
+
+*******How To Create A Repository on Github********
+
+1>Open http://github.com
+    Go to the top right side of the screen and click on (+) sign to create a new repository.
+
+2>Click on the new repository and then type the name of the repository and other details and press on Create repository.
+Copy the address of your repository
+
+3>Search Gitbash and open Gitbash cmd
+    ->         Run cd ~
+    ->         Run cd Desktop/
+    ->         Run git clone (place address of your repositry).     for ex. (https://github.com/sanketdambhe/NodejsAPI.git)
+    ->         Run cd (name of your repository).
+    ->         Past your project which you want to upload in the testing folder on a desktop
+    ->         Run (git status)
+    ->         Run (git add .)
+    ->         Run(git commit -m “write some hint ”)
+    ->         Run (git push origin master).
+
+You successfully add your project to GitHub 
+
+You can watch video tutorial :https://justhinter.com/create-github-repository/
+
+
+
+************Clone A Repository from  Github************
+
+1>open Gitbash cmd
+ ->    Run   cd Desktop
+ ->    Run   git  clone  (place address of your repositry). for ex (https://github.com/sanketdambhe/NodejsAPI.git)

@@ -1,0 +1,155 @@
+bootstrap 4.0.0 , laravel 5 , angular 6                  rd /s/q "foldername" <-to delete folder                    
+
+
+0>INSTALL ANGULAR CLI     (version: https://www.npmjs.com/package/@angular/cli?activeTab=versions)
+  npm install -g @angular/cli
+*To INSTALL SPECIFIC VERSION OF ANGULAR CLI
+   npm install -g @angular/cli@version           (ex.npm install -g @angular/cli@6.1.0)
+*UnINSTALL ANGULAR CLI
+   npm uninstall -g @angular/cli
+*RUN OLDER PROJECT IN NEW VERSION OF ANGULAR CLI  
+   you have to update the node package manager using following command
+   npm update
+  
+
+0.1>CREATE NEW PROJECT 
+  ng new project-name            (name must be in camel case "projectName" OR dash - is allowed in project name and No andy special characters are allowed)
+  ng new project-name --routing   (project will create with routing file)
+0.2>INSTALL NODE MODULE
+   npm install
+   npm i npm@latest -g
+
+1>START SERVER:
+  ng serve     OR 
+  ng serve --open    
+  ng serve --port 4200 (to open with define port)
+
+2>TO CREATE COMPONENT
+  ng g c component-name            OR
+  ng create component component-name   
+
+3>TO GENERATE SERVICE
+  ng g s service-name                 (Ex. ng g s user)
+
+4>To GENERATE MODEL
+  ng g module module-name
+
+5>TO GENERATE MODEL OF SERVICE
+  ng g class service-name --type=model      (Ex.g class user --type=model)
+
+6>TO GENERATE AUTH GUARD
+  ng g guard auth
+
+ng config -g cli.warnings.versionMismatch false
+
+
+__________________________________________________________________________________________________________________________________________________________________
+* Additional Commands
+ng new
+ng serve
+ng generate
+ng lint
+ng test     (running unit test)  You can run tests a single time via --watch=false or --single-run.
+ng e2e     (running end to end test)
+ng build
+ng get/ng set
+ng doc
+ng xi18n
+ng update
+___________________________________________________________________________________________________________________________________________________________________
+
+
+* INSTALLATION PROCESS FORM ANGULAR 
+i>First download NodeJs from https://nodejs.org/en/   (download version:8.11.3 LTS)
+  anter download NodeJs Install it
+
+  >To check NodeJs version:
+  node --version
+
+ii>Now open Cammand Promt & install the Angular CLI globally.
+   CMD COMMAND =>  npm install -g @angular/cli
+
+
+  >To check Angular version:
+  npm --version
+
+iii>To create now project 
+   CMD COMMAND=>ng new project-name   (name must be in camel case "projectName" OR dash - is allowed in project name and No andy special characters are allowed)
+
+  >To check project version:
+  ng --version
+
+iv>TO add bootstrap cli (documentation from -> http://getbootstrap.com/)
+   CMD COMMAND=>  npm install bootstrap 
+    set path in angular.json=>  "styles": [
+                              {
+                              "input": "node_modules/@angular/material/prebuilt-themes/indigo-pink.css"
+                               },
+                           "node_modules/bootstrap/dist/css/bootstrap.min.css",
+                           "src/styles.css"
+                              ],
+[Note: If you import bootstrap with Flex Layout then dont use container or container-fluid in flex layout]
+
+
+v> To add jquery  and Popper cli
+   CMD COMMAND=>   npm install jquery --save     
+                   npm install popper.js --save
+                   OR   
+                  npm install jquery popper.js --save
+   set path in angular.json=>  "scripts": [
+              "./node_modules/jquery/dist/jquery.slim.min.js",
+              "./node_modules/popper.js/dist/umd/popper.min.js",
+               "./node_modules/bootstrap/dist/js/bootstrap.min.js"  
+            ]
+
+
+
+
+
+string interpulation
+tow wey binding
+event bing
+property binding
+
+
+
+>TO INSTALL ANGULAR-FLEX   (Documentation from : https://github.com/angular/flex-layout)  (version of flex: https://github.com/angular/flex-layout/blob/master/CHANGELOG.md )  (Responsive flex: https://tburleson-layouts-demos.firebaseapp.com/#/responsive)
+ npm install @angular/flex-layout --save
+ npm install @angular/flex-layout@latest --save
+ npm install @angular/flex-layout@6.0.0-beta.18   (for specific version)
+ npm uninstall @angular/flex-layout
+ import { FlexLayoutModule } from '@angular/flex-layout';
+ -->check typescript version(tsc -v) 
+ -->to install lettest typescript(npm install typescript@latest -g)
+ -->to upgrade typescript to specific version(npm install -g typescript@3.1.1) (flex-layout@6.0.0-beta.18 required typescript version @3.1.1)
+
+
+
+>TO INSTALL ANGULAR-MATERIAL (Documentation from: https://material.angular.io/)     @angular/material@6.4.7
+ npm install --save @angular/material @angular/cdk @angular/animations
+ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+
+     
+>TO CREATE MATERIAL NAV-BAR (PRE-CREATED Nav-bar)
+ ng g @angular/material:material-nav --name=main-nav 
+ ng generate @angular/material:material-nav --name=my-nav
+ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; 
+
+
+=============================================================================
+For email input with a custom ErrorStateMatcher from angular material
+ you have to import following in app.component.ts
+
+  import {ErrorStateMatcher,ShowOnDirtyErrorStateMatcher, } from '@angular/material';
+  import { FormsModule } from '@angular/forms';
+  
+  @NgModule({
+         imports: [FormsModule],
+         providers: [{provide: ErrorStateMatcher, useClass: ShowOnDirtyErrorStateMatcher} ],
+            })
+=============================================================================
+angular template site:
+
+
+
+

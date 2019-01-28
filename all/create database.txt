@@ -1,0 +1,50 @@
+*1>TO CREATE NEW DATABASE:-                                                 (CREATE DATABASE)
+  use databasename
+
+*2>TO SHOW ALL DATABASE:-                                                       (SHOW DATABASES)
+  show dbs
+
+*3>TO SHOW ALL COLLECTION IN DATABASE:-                       (SHOW COLLECTIONS OF DATABASE)
+  show collections
+
+*4>CURRENT DATABASE NAME:-                                                  (SHOW CURRENT DATABASE)
+  db
+
+5>INSERT NEW TABLE WITH DATA:-                                               (INSERT TABLE)
+  db.newdocname.insert({"type":"value"})
+
+*6>INSERT NEW DOCS :-                                                                  (INSERT DOCUMENT)
+      > use databasename
+      > show dbs
+      > db
+      > db.fruits.insert([
+        {"fruit" : "orenge"},
+        {"fruit" : "apple"},
+        {"fruit" : "bannana"},
+        {"fruit" : "grapes"},
+        {"fruit" : "pinaple"}
+         ])
+
+*7>DROP DATABASE :-                                                                      (DROP DATABASE)
+    > use databasename
+    > db.dropDatabase()
+
+*8>DROP TABLE/ COLLECTION :-                                                   (DROP  TABLE/ COLLECTION)
+     db.tablename.drop()
+             
+*8>QUERRYING / FINDING DOCS :-                                              (FIND DOCUMENTS)
+       find all 
+            > db.fruits.find()
+
+       find one 
+            > db.fruits.findOdbne()
+
+*9>UPDATING DOCS :-                                                                  (UPDATE DOCUMENTS)
+           > db.fruits.update({"fruit":"orenge"},{$set:{"fruit":"orenge1"}})
+
+
+10>DELETING REMOVING DOCS: -----                                    (DELETE DOCUMENTS)   
+           > db.fruits.remove({"fruit":"orenge1"})       
+
+
+

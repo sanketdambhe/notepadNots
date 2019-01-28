@@ -1,0 +1,120 @@
+Mododb Installation   npm start
+
+
+
+first download ModoDB from 
+
+
+npm install --save express mongoose joi cors jsonwebtoken babel-cli eslint
+
+
+npm install bcryptjs cors express joi jsonwebtoken mongoose passport passport-jwt --save
+npm install babel-cli babel-preset-env babel-preset-stage-0 --save-dev
+
+http://localhost:3000/api/users/signup
+{
+"firstName": "rohit",
+"lastName": "shetti",
+"email": "rohitshetty@gmail.com",
+"password": "123456"
+}
+
+
+
+
+
+
+git clone  url
+npm temp
+npm tempAuth
+
+start  mongod to start mogo db server
+
+ open both server client folder in vs-coder
+now start command npm start
+
+
+swagger     /api-docs
+
+
+in cmd
+git status
+it sow no commits yet
+now
+
+git add.
+
+git commit -m  "first push to rep"
+
+git  clear
+
+
+
+now comd for pus
+giit push origin master
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+ng build --prod --aot
+hostpixcle
+
+
+
+mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmto push on git
+git status
+git add .
+git commit -m "user Auth created"
+git push origin masterkl
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+swagger.id
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+============================================================
+1> create project folder  ex myFirstDemo
+2> open cmd by clicking shift+rightClick
+3> type (node -v) to check node js version
+
+4>  now open myFirstDemo folder in visual studio code
+5> open visual Studio cmd and type (npm init -y)      now package.json file is created
+6> now type (npm install express)                        now express is install
+
+7>create server.js file and write code
+8>  type (node server.js) to run file
+
+9>type (npm install mongoose) to install mongoose package
+
+10>type (npm install dotenv) to read env file

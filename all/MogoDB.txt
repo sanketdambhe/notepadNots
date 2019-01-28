@@ -1,0 +1,95 @@
+MLab{ username: "sanket.dambhe@gmail.com", account: "sanket.dambhe"  , password: "sanket@8983949949"}
+AuthO{username: "sanket.dambhe@gmail.com" password: Sanket@8983949949}
+
+
+dbname:eventsdb dbUser:usersanket password:passwordsanket123
+
+//GET   =>  READ
+//POST  => CREATE
+//PUT   =>  MODIFY/EDIT
+//DELETE => DELETE
+_____________________________________________________________________________________________________________
+
+1>TO CREATE PACKAGE AND JSON FILE
+   npm init -y
+then type code . to open file in visual studio
+_____________________________________________________________________________________________________________
+
+
+npm install --save express           -----install express js
+npm  install --save body-parser
+npm install --save cors
+npm install --save mongoose      
+npm install --save nodemon      or   npm install -g nodemon       -----for live server
+npm install jsonwebtoken --save
+
+node index.js
+
+
+nodemon index.js     --------- to run
+
+
+
+
+
+star mogodb server
+mongo 
+show dbs
+
+
+
+
+
+nodemon index.js to seart server
+
+
+
+start postman
+
+click on get-
+
+api/items
+
+send
+
+
+
+post
+api/item
+send
+body
+raw
+json
+put data
+send
+getresponse
+
+
+
+add another data
+
+
+put
+put id on url
+
+
+
+
+00000000000
+
+npm istall @angular/cli
+local installation 
+
+
+
+=============================================================================================
+1>open cmd 
+2>type => npm init -y
+3>npm install express
+{{http://localhost:3001/posts}}
+4>ipm install dotenv
+================================================================================================
+
+
+
+

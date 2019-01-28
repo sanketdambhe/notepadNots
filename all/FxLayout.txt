@@ -1,0 +1,102 @@
+***************
+
+<div fxLayout="column" fxLayoutAlign="center stretch">   <--- always start with column ___column___________________________
+                                                                                       |                            |
+                                                                                       |  row                       | 
+                                                                                       |                            |
+                                                                                       |  row                       |
+                                                                                       |                            |
+                                                                                       |  row                       |
+                                                                                       |____________________________|
+                                                                                       
+</div>
+
+
+
+
+              Column = next Line
+              Row    = same Line
+ 
+
+************Remove Mat-Card shadow/border use following property
+.card{
+     transition: none !important;
+     box-shadow: none !important;
+     border: none !important;
+     }
+
+***********
+
+
+ngClass.xs='XsLogo'  ngClass.sm='lgLogo' ngClass.gt-sm='lgLogo'
+
+
+****************OBSERVABLE MEDIA***************************
+Injectable Observable used to subscribe to MediaQuery activation changes.
+import {ObservableMedia} from '@angular/flex-layout';
+constructor(public media: ObservableMedia ) { ... }
+
+*****************BREAKPOINTS:******************************
+Injection token used to override or extend the default breakpoints with custom MediaQuery breakpoints.
+import {BREAKPOINTS} from '@angular/flex-layout';
+providers: [{provide: BREAKPOINTS, useValue: MY_CUSTOM_BREAKPOINTS }]
+
+*************BASE DIRECTIVE ADAPTER************************
+Adapter class useful to extend existing Directives with MediaQuery activation features.
+import {NgClass} from '@angular/core';
+export class ClassDirective extends NgClass { ... }
+
+**************HTML API (Declarative)***********************
+The features of Flex-Layout are best used declaratively in template HTML. This API has two (2) significant feature sets:
+
+*****Static API: Summary of static API features.
+*****Responsive API: Introducing Responsive API and BreakPoints details.
+     As each directive (aka API) within @angular/flex-layout has its own constraints and options, the links below should be used to navigate to the specific documentation pages for each directive
+
+
+
+******************CONTAINERS**********************************This API set applies flexbox CSS stylings for DOM container elements with 1 or more nested flex children:
+
+
+fxLayout: Defines the flow order of child items within a flexbox container
+     <div fxLayout="row" fxLayout.xs="column"></div>
+
+fxLayoutGap: Defines if child items within a flexbox container should have a gap
+     <div fxLayoutGap="10px"></div>
+
+fxLayoutAlign:
+      ( Defines how flexbox items are aligned according to both the main-axis and the cross-axis, within a flexbox container)
+       <div fxLayoutAlign="start stretch"></div>
+
+*********CHILD ELEMENT WITHIN CONTAINERS**************************This API set applies flexbox CSS stylings for a DOM element nested within FlexBox DOM container:
+
+fxFlex: This markup specifies the resizing of its host element within a flexbox container flow
+<div fxFlex="1 2 calc(15em + 20px)"></div>
+
+fxFlexOrder: Defines the order of a flexbox item
+<div fxFlexOrder="2"></div>
+
+fxFlexOffset: Offset a flexbox item in its parent container flow layout
+<div fxFlexOffset="20px"></div>
+
+fxFlexAlign: Works like fxLayoutAlign, but applies only to a single flexbox item, instead of all of them
+<div fxFlexAlign="center"></div>
+
+fxFlexFill:
+Maximizes width and height of element in a layout container
+<div fxFlexFill></div>
+
+************SPECIAL RESPONSIVE FEATURES**************************While the following APIs also add or remove DOM element inline styles, they are NOT FlexBox CSS specific.
+Instead these are Responsive APIs used to adjust specific, non-flexbox styles when a specific mediaQuery has activated:
+
+fxShow: This markup specifies if its host element should be displayed (or not)
+<div fxShow [fxShow.xs]="isVisibleOnMobile()"></div>
+
+fxHide: This markup specifies if its host element should NOT be displayed
+<div fxHide [fxHide.gt-sm]="isVisibleOnDesktop()"></div>
+
+ngClass : Enhances the ngClass directives with class changes based on mediaQuery activations
+<div [ngClass.sm]="{'fxClass-sm': hasStyle}"></div>
+
+ngStyle: Enhances the ngStyle directive with style updates based on mediaQuery activations
+<div [ngStyle.xs]="{'font-size.px': 10, color: 'blue'}"></div>
